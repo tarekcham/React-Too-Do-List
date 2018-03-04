@@ -1,0 +1,21 @@
+.button {
+	color: white;
+	background-color: #344f82;
+	padding: 1rem;
+	margin-bottom:1rem;
+	width: 40rem;
+}
+.cancelButton {
+	background-color: red;
+	color: white;
+}
+
+li {
+	list-style: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .button {
+	width: 10rem;
+}
+}
