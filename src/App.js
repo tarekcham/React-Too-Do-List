@@ -24,6 +24,7 @@ loadLocalStorage= () => {
 }
 
   onChangeHandler = (event)=> {
+    event.preventDefault();
     const list = event.target.value;
     this.setState( {
       inputValue:list
@@ -62,7 +63,7 @@ componentWillMount() {
           <p className="App-intro">
             To get started, edit <code>src/App.js</code> and save to reload.
           </p>
-         <ToDoList item={this.state.todo} click={this.clickHandler} change={this.onChangeHandler}/>      
+         <ToDoList inputValue={this.state.inputValue} click={this.clickHandler} change={this.onChangeHandler}/>      
          <Item items={this.state.items} onDelete={this.deleteHandler}/>
          {localStorage.setItem('items', JSON.stringify(this.state.items))}
         </div>
