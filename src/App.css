@@ -19,10 +19,40 @@
 }
 
 .App-intro {
+  margin-top: 2rem;
   font-size: large;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+.box {
+  background-color: darkorange;
+  border: 1px solid black;
+  width: 95%;
+  margin:  1rem auto;
+  border-radius: 0.3rem;
+}
+.boxDone {
+  background-color: lightgreen;
+  border: 1px solid black;
+  width: 95%;
+  margin:  1rem auto;
+  border-radius: 0.3rem;
+}
+
+.complete,
+.delete {
+    margin: 1rem 0.5rem 0 0.5rem;
+    float: right;
+    cursor: pointer;
+}
+.hide{
+  display: none;
+}
+
+.wrap {
+  padding: 0.1rem 0.3rem;
+  word-wrap: break-word;
 }
